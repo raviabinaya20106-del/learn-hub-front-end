@@ -1,0 +1,1159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LearnHub - Learn Today, Build Your Future</title>
+  <meta name="description" content="LearnHub is a modern online learning platform offering top-tier courses in Web Development, Python, Java, and Cybersecurity.">
+
+  <!-- Google Fonts: Plus Jakarta Sans & Outfit -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome Icons CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+  <!-- Custom CSS Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- =========================================================
+       NAVIGATION BAR (Fixed at the top with smooth scroll links)
+       ========================================================= -->
+  <header class="header" id="navbar">
+    <div class="container nav-container">
+      <!-- Website Brand Logo -->
+      <a href="#home" class="logo" aria-label="LearnHub Home">
+        <div class="logo-icon">
+          <i class="fa-solid fa-graduation-cap"></i>
+        </div>
+        <span class="logo-text">Learn<span>Hub</span></span>
+      </a>
+
+      <!-- Desktop & Mobile Navigation Links -->
+      <nav class="nav-menu" id="navMenu">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#home" class="nav-link active">Home</a></li>
+          <li class="nav-item"><a href="#courses" class="nav-link">Courses</a></li>
+          <li class="nav-item"><a href="#benefits" class="nav-link">Benefits</a></li>
+          <li class="nav-item"><a href="#trainers" class="nav-link">Trainers</a></li>
+          <li class="nav-item"><a href="#reviews" class="nav-link">Reviews</a></li>
+          <li class="nav-item"><a href="#register" class="nav-link">Register</a></li>
+          <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+        <!-- Mobile-only Register CTA -->
+        <div class="mobile-nav-cta">
+          <a href="#register" class="btn btn-primary btn-block">Get Started</a>
+        </div>
+      </nav>
+
+      <!-- Right Navigation Action (Desktop CTA + Mobile Hamburger) -->
+      <div class="nav-actions">
+        <a href="#register" class="btn btn-primary nav-cta-btn">
+          <span>Get Started</span>
+          <i class="fa-solid fa-arrow-right"></i>
+        </a>
+
+        <!-- Hamburger Menu Button for Mobile Devices -->
+        <button class="hamburger-btn" id="hamburgerBtn" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span class="bar bar-1"></span>
+          <span class="bar bar-2"></span>
+          <span class="bar bar-3"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- =========================================================
+         1. HOME / HERO SECTION
+         ========================================================= -->
+    <section class="hero-section" id="home">
+      <div class="container hero-container">
+        <!-- Hero Left Column: Text & CTAs -->
+        <div class="hero-content">
+          <div class="badge-pill">
+            <i class="fa-solid fa-bolt"></i>
+            <span>Transform Your Tech Career</span>
+          </div>
+          <h1 class="hero-title">
+            Learn Today, <br>
+            <span class="gradient-text">Build Your Future</span>
+          </h1>
+          <p class="hero-description">
+            Unlock your full potential with LearnHub. Master in-demand programming, web development, and cybersecurity skills through interactive, industry-vetted courses and hands-on projects designed for ambitious learners.
+          </p>
+
+          <!-- Action Buttons -->
+          <div class="hero-btn-group">
+            <a href="#courses" class="btn btn-primary btn-lg">
+              <i class="fa-solid fa-compass"></i>
+              <span>Explore Courses</span>
+            </a>
+            <a href="#register" class="btn btn-secondary btn-lg">
+              <i class="fa-solid fa-user-plus"></i>
+              <span>Join For Free</span>
+            </a>
+          </div>
+
+          <!-- Quick Statistics Bar -->
+          <div class="hero-stats">
+            <div class="stat-item">
+              <h3 class="stat-number">25,000+</h3>
+              <p class="stat-label">Active Learners</p>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+              <h3 class="stat-number">96%</h3>
+              <p class="stat-label">Placement Rate</p>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+              <h3 class="stat-number">4.9 / 5</h3>
+              <p class="stat-label">Course Rating</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Right Column: Visual Media & Floating Badges -->
+        <div class="hero-visual">
+          <div class="hero-image-wrapper">
+            <!-- Hero Educational Image -->
+            <img 
+              src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=900&q=80" 
+              alt="Students collaborating and learning together" 
+              class="hero-img"
+              loading="eager"
+            >
+            <div class="hero-img-overlay"></div>
+
+            <!-- Floating Micro Cards -->
+            <div class="floating-card floating-card-1">
+              <div class="floating-card-icon icon-emerald">
+                <i class="fa-solid fa-circle-check"></i>
+              </div>
+              <div class="floating-card-text">
+                <strong>Certified Skills</strong>
+                <span>Industry Accredited</span>
+              </div>
+            </div>
+
+            <div class="floating-card floating-card-2">
+              <div class="floating-card-icon icon-amber">
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <div class="floating-card-text">
+                <strong>Top Mentors</strong>
+                <span>Ex-Google, Amazon</span>
+              </div>
+            </div>
+
+            <div class="floating-card floating-card-3">
+              <div class="floating-card-icon icon-indigo">
+                <i class="fa-solid fa-laptop-code"></i>
+              </div>
+              <div class="floating-card-text">
+                <strong>100% Practical</strong>
+                <span>Real-World Labs</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         2. COURSES SECTION
+         ========================================================= -->
+    <section class="section courses-section" id="courses">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="section-header text-center">
+          <span class="section-tag">Featured Curriculums</span>
+          <h2 class="section-title">Explore In-Demand Courses</h2>
+          <p class="section-subtitle">
+            Choose from industry-aligned programs crafted by senior engineers to accelerate your professional journey.
+          </p>
+        </div>
+
+        <!-- Course Cards Grid -->
+        <div class="courses-grid">
+
+          <!-- Course 1: Web Development -->
+          <article class="course-card" data-category="web">
+            <div class="course-card-image">
+              <img 
+                src="https://images.unsplash.com/photo-1547658719-da2b51169166?auto=format&fit=crop&w=700&q=80" 
+                alt="Web Development Code on Screen" 
+                loading="lazy"
+              >
+              <span class="course-badge badge-blue">Full Stack</span>
+              <div class="course-rating-pill">
+                <i class="fa-solid fa-star"></i> 4.9 (420 reviews)
+              </div>
+            </div>
+
+            <div class="course-card-body">
+              <div class="course-meta-top">
+                <span class="course-duration"><i class="fa-regular fa-clock"></i> 12 Weeks</span>
+                <span class="course-level"><i class="fa-solid fa-signal"></i> Beginner to Pro</span>
+              </div>
+
+              <h3 class="course-title">Web Development</h3>
+              <p class="course-desc">
+                Master modern frontend and backend development with HTML5, CSS3, modern JavaScript, React, Node.js, and MongoDB through 10+ live portfolio projects.
+              </p>
+
+              <div class="course-highlights">
+                <span><i class="fa-solid fa-check"></i> React & Node.js</span>
+                <span><i class="fa-solid fa-check"></i> REST APIs & DBs</span>
+                <span><i class="fa-solid fa-check"></i> Cloud Deployment</span>
+              </div>
+
+              <div class="course-footer">
+                <div class="course-price">
+                  <span class="price-val">Free</span>
+                  <span class="price-note">With Registration</span>
+                </div>
+                <button 
+                  class="btn btn-outline-primary btn-sm learn-more-btn" 
+                  data-course-id="web-dev"
+                  data-course-name="Web Development"
+                  data-course-duration="12 Weeks (6-8 hrs/week)"
+                  data-course-instructor="Dr. Alex Morgan"
+                  data-course-desc="Comprehensive full stack web engineering covering modern responsive UI design, component-based architectures with React, RESTful API creation with Node.js/Express, database modeling with MongoDB, and deployment to cloud services like Vercel and AWS."
+                  data-course-syllabus="HTML5 & Modern CSS3 Grid/Flexbox|JavaScript ES6+ & DOM Manipulation|React.js & State Management|Node.js, Express & RESTful APIs|MongoDB Database Integration|Production Deployment & CI/CD"
+                >
+                  <span>Learn More</span>
+                  <i class="fa-solid fa-arrow-right"></i>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Course 2: Python Programming -->
+          <article class="course-card" data-category="python">
+            <div class="course-card-image">
+              <img 
+                src="https://images.unsplash.com/photo-1526379095098-d400fd0bf935?auto=format&fit=crop&w=700&q=80" 
+                alt="Python Programming Matrix" 
+                loading="lazy"
+              >
+              <span class="course-badge badge-amber">Popular</span>
+              <div class="course-rating-pill">
+                <i class="fa-solid fa-star"></i> 4.8 (380 reviews)
+              </div>
+            </div>
+
+            <div class="course-card-body">
+              <div class="course-meta-top">
+                <span class="course-duration"><i class="fa-regular fa-clock"></i> 8 Weeks</span>
+                <span class="course-level"><i class="fa-solid fa-signal"></i> All Levels</span>
+              </div>
+
+              <h3 class="course-title">Python Programming</h3>
+              <p class="course-desc">
+                From foundational syntax and data structures to object-oriented programming, automation scripts, and introductory data science with NumPy and Pandas.
+              </p>
+
+              <div class="course-highlights">
+                <span><i class="fa-solid fa-check"></i> Python Core & OOP</span>
+                <span><i class="fa-solid fa-check"></i> Automation & Web Scraping</span>
+                <span><i class="fa-solid fa-check"></i> NumPy & Pandas Data</span>
+              </div>
+
+              <div class="course-footer">
+                <div class="course-price">
+                  <span class="price-val">Free</span>
+                  <span class="price-note">With Registration</span>
+                </div>
+                <button 
+                  class="btn btn-outline-primary btn-sm learn-more-btn" 
+                  data-course-id="python-prog"
+                  data-course-name="Python Programming"
+                  data-course-duration="8 Weeks (5-7 hrs/week)"
+                  data-course-instructor="Priya Sharma"
+                  data-course-desc="A hands-on, practical journey through Python. Learn core programming paradigms, write automated scripts to solve everyday problems, parse data, work with APIs, and explore computational analysis with Pandas."
+                  data-course-syllabus="Python Syntax, Variables & Control Flow|Data Structures: Lists, Tuples, Dictionaries|Object-Oriented Programming (OOP)|File I/O, Error Handling & Modules|Web Scraping with BeautifulSoup|Data Analysis with Pandas & Visualization"
+                >
+                  <span>Learn More</span>
+                  <i class="fa-solid fa-arrow-right"></i>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Course 3: Java Programming -->
+          <article class="course-card" data-category="java">
+            <div class="course-card-image">
+              <img 
+                src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=700&q=80" 
+                alt="Java Programming Laptop" 
+                loading="lazy"
+              >
+              <span class="course-badge badge-indigo">Enterprise</span>
+              <div class="course-rating-pill">
+                <i class="fa-solid fa-star"></i> 4.7 (290 reviews)
+              </div>
+            </div>
+
+            <div class="course-card-body">
+              <div class="course-meta-top">
+                <span class="course-duration"><i class="fa-regular fa-clock"></i> 10 Weeks</span>
+                <span class="course-level"><i class="fa-solid fa-signal"></i> Intermediate</span>
+              </div>
+
+              <h3 class="course-title">Java Programming</h3>
+              <p class="course-desc">
+                Deep dive into robust Java architecture, Object-Oriented Principles, Collections Framework, Multithreading, and Spring Boot enterprise development.
+              </p>
+
+              <div class="course-highlights">
+                <span><i class="fa-solid fa-check"></i> OOP & Design Patterns</span>
+                <span><i class="fa-solid fa-check"></i> Java Collections & Streams</span>
+                <span><i class="fa-solid fa-check"></i> Spring Boot Framework</span>
+              </div>
+
+              <div class="course-footer">
+                <div class="course-price">
+                  <span class="price-val">Free</span>
+                  <span class="price-note">With Registration</span>
+                </div>
+                <button 
+                  class="btn btn-outline-primary btn-sm learn-more-btn" 
+                  data-course-id="java-prog"
+                  data-course-name="Java Programming"
+                  data-course-duration="10 Weeks (6-8 hrs/week)"
+                  data-course-instructor="David Chen"
+                  data-course-desc="Tailored for software engineering candidates aiming for enterprise backend roles. Gain an exhaustive understanding of JVM internals, OOP pillars, clean code principles, multithreading, and RESTful microservices with Spring Boot."
+                  data-course-syllabus="Core Java, Syntax & Type System|Object-Oriented Design & Polymorphism|Collections, Generics & Streams API|Multithreading & Concurrency|Spring Boot Microservices & JPA|Unit Testing with JUnit & Mockito"
+                >
+                  <span>Learn More</span>
+                  <i class="fa-solid fa-arrow-right"></i>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Course 4: Cybersecurity -->
+          <article class="course-card" data-category="security">
+            <div class="course-card-image">
+              <img 
+                src="https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&w=700&q=80" 
+                alt="Cybersecurity Lock and Code" 
+                loading="lazy"
+              >
+              <span class="course-badge badge-rose">High Demand</span>
+              <div class="course-rating-pill">
+                <i class="fa-solid fa-star"></i> 4.9 (510 reviews)
+              </div>
+            </div>
+
+            <div class="course-card-body">
+              <div class="course-meta-top">
+                <span class="course-duration"><i class="fa-regular fa-clock"></i> 10 Weeks</span>
+                <span class="course-level"><i class="fa-solid fa-signal"></i> Beginner to Adv</span>
+              </div>
+
+              <h3 class="course-title">Cybersecurity</h3>
+              <p class="course-desc">
+                Learn ethical hacking, network defense, threat analysis, penetration testing methodologies, cryptography, and real-time security auditing techniques.
+              </p>
+
+              <div class="course-highlights">
+                <span><i class="fa-solid fa-check"></i> Ethical Hacking & Kali</span>
+                <span><i class="fa-solid fa-check"></i> Network & Packet Analysis</span>
+                <span><i class="fa-solid fa-check"></i> Web App Security (OWASP)</span>
+              </div>
+
+              <div class="course-footer">
+                <div class="course-price">
+                  <span class="price-val">Free</span>
+                  <span class="price-note">With Registration</span>
+                </div>
+                <button 
+                  class="btn btn-outline-primary btn-sm learn-more-btn" 
+                  data-course-id="cyber-sec"
+                  data-course-name="Cybersecurity"
+                  data-course-duration="10 Weeks (7-9 hrs/week)"
+                  data-course-instructor="Sarah Jenkins"
+                  data-course-desc="Step into cybersecurity with defense and offensive techniques. Conduct vulnerability assessments, identify OWASP Top 10 web vulnerabilities, dissect malicious network traffic, and prepare for certifications such as CompTIA Security+ and CEH."
+                  data-course-syllabus="Cyber Threats, Vectors & Cyber Hygiene|Networking Protocols, Wireshark & Nmap|Ethical Hacking Tools in Kali Linux|OWASP Top 10 Web Exploits & Fixes|Cryptography & Secure Communications|Incident Response & Security Auditing"
+                >
+                  <span>Learn More</span>
+                  <i class="fa-solid fa-arrow-right"></i>
+                </button>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         3. LEARNING BENEFITS SECTION
+         ========================================================= -->
+    <section class="section benefits-section" id="benefits">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="section-header text-center">
+          <span class="section-tag">Why Choose LearnHub</span>
+          <h2 class="section-title">Designed for Your Ultimate Success</h2>
+          <p class="section-subtitle">
+            We provide a flexible, mentor-led environment optimized for practical skill acquisition and career transformation.
+          </p>
+        </div>
+
+        <!-- Benefits Grid -->
+        <div class="benefits-grid">
+
+          <!-- Benefit 1: Learn Anywhere -->
+          <div class="benefit-card">
+            <div class="benefit-icon-wrapper benefit-bg-blue">
+              <i class="fa-solid fa-globe"></i>
+            </div>
+            <h3 class="benefit-title">Learn Anywhere</h3>
+            <p class="benefit-desc">
+              Study seamlessly from any device, anytime. Our cross-platform responsive interface ensures your progress syncs effortlessly across mobile, tablet, and desktop.
+            </p>
+          </div>
+
+          <!-- Benefit 2: Expert Trainers -->
+          <div class="benefit-card">
+            <div class="benefit-icon-wrapper benefit-bg-emerald">
+              <i class="fa-solid fa-user-tie"></i>
+            </div>
+            <h3 class="benefit-title">Expert Trainers</h3>
+            <p class="benefit-desc">
+              Learn directly from veteran software engineers and domain specialists who bring real industry experience, modern coding standards, and insider tips.
+            </p>
+          </div>
+
+          <!-- Benefit 3: Practical Projects -->
+          <div class="benefit-card">
+            <div class="benefit-icon-wrapper benefit-bg-purple">
+              <i class="fa-solid fa-laptop-code"></i>
+            </div>
+            <h3 class="benefit-title">Practical Projects</h3>
+            <p class="benefit-desc">
+              Move beyond dry theory. Build production-grade projects, deploy live web applications, and develop an impressive GitHub portfolio that recruiters notice.
+            </p>
+          </div>
+
+          <!-- Benefit 4: Flexible Learning -->
+          <div class="benefit-card">
+            <div class="benefit-icon-wrapper benefit-bg-amber">
+              <i class="fa-solid fa-clock-rotate-left"></i>
+            </div>
+            <h3 class="benefit-title">Flexible Learning</h3>
+            <p class="benefit-desc">
+              Balance education with your work or college schedule. Access recorded sessions, modular video lessons, and interactive challenges at your own pace.
+            </p>
+          </div>
+
+          <!-- Benefit 5: Certificates -->
+          <div class="benefit-card">
+            <div class="benefit-icon-wrapper benefit-bg-rose">
+              <i class="fa-solid fa-award"></i>
+            </div>
+            <h3 class="benefit-title">Verified Certificates</h3>
+            <p class="benefit-desc">
+              Receive accredited course completion certificates with unique verification IDs to showcase your verified technical credentials on LinkedIn and resumes.
+            </p>
+          </div>
+
+          <!-- Benefit 6: Community & Mentorship -->
+          <div class="benefit-card">
+            <div class="benefit-icon-wrapper benefit-bg-cyan">
+              <i class="fa-solid fa-comments"></i>
+            </div>
+            <h3 class="benefit-title">Community & Support</h3>
+            <p class="benefit-desc">
+              Join an active peer community of thousands of fellow learners. Participate in weekly Q&amp;A sessions, code reviews, and collaborative study groups.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         4. TRAINERS SECTION
+         ========================================================= -->
+    <section class="section trainers-section" id="trainers">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="section-header text-center">
+          <span class="section-tag">Industry Mentors</span>
+          <h2 class="section-title">Meet Our Expert Trainers</h2>
+          <p class="section-subtitle">
+            Our instructors bring years of engineering experience from premier tech firms to mentor you every step of the way.
+          </p>
+        </div>
+
+        <!-- Trainers Cards Grid -->
+        <div class="trainers-grid">
+
+          <!-- Trainer 1 -->
+          <div class="trainer-card">
+            <div class="trainer-image-container">
+              <img 
+                src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=600&q=80" 
+                alt="Dr. Alex Morgan - Lead Web Architect" 
+                class="trainer-img"
+                loading="lazy"
+              >
+              <div class="trainer-socials">
+                <a href="#trainers" aria-label="LinkedIn Profile"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="#trainers" aria-label="GitHub Profile"><i class="fa-brands fa-github"></i></a>
+                <a href="#trainers" aria-label="Twitter Profile"><i class="fa-brands fa-x-twitter"></i></a>
+              </div>
+            </div>
+            <div class="trainer-info">
+              <span class="trainer-experience-badge">10+ Years Experience</span>
+              <h3 class="trainer-name">Dr. Alex Morgan</h3>
+              <p class="trainer-subject">Lead Web Architect</p>
+              <p class="trainer-bio">
+                Ex-Senior Frontend Engineer at Stripe. Specialized in React ecosystems, scalable web architecture, and modern JavaScript performance optimization.
+              </p>
+              <div class="trainer-tags">
+                <span>React</span>
+                <span>Node.js</span>
+                <span>TypeScript</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Trainer 2 -->
+          <div class="trainer-card">
+            <div class="trainer-image-container">
+              <img 
+                src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=600&q=80" 
+                alt="Priya Sharma - Senior Python & AI Specialist" 
+                class="trainer-img"
+                loading="lazy"
+              >
+              <div class="trainer-socials">
+                <a href="#trainers" aria-label="LinkedIn Profile"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="#trainers" aria-label="GitHub Profile"><i class="fa-brands fa-github"></i></a>
+                <a href="#trainers" aria-label="Twitter Profile"><i class="fa-brands fa-x-twitter"></i></a>
+              </div>
+            </div>
+            <div class="trainer-info">
+              <span class="trainer-experience-badge">8+ Years Experience</span>
+              <h3 class="trainer-name">Priya Sharma</h3>
+              <p class="trainer-subject">Python & Data Specialist</p>
+              <p class="trainer-bio">
+                Data Scientist & Python specialist with a passion for teaching. Has trained over 12,000 students in Python programming, automation, and machine learning.
+              </p>
+              <div class="trainer-tags">
+                <span>Python</span>
+                <span>Pandas</span>
+                <span>Automation</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Trainer 3 -->
+          <div class="trainer-card">
+            <div class="trainer-image-container">
+              <img 
+                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=600&q=80" 
+                alt="David Chen - Enterprise Java Architect" 
+                class="trainer-img"
+                loading="lazy"
+              >
+              <div class="trainer-socials">
+                <a href="#trainers" aria-label="LinkedIn Profile"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="#trainers" aria-label="GitHub Profile"><i class="fa-brands fa-github"></i></a>
+                <a href="#trainers" aria-label="Twitter Profile"><i class="fa-brands fa-x-twitter"></i></a>
+              </div>
+            </div>
+            <div class="trainer-info">
+              <span class="trainer-experience-badge">12+ Years Experience</span>
+              <h3 class="trainer-name">David Chen</h3>
+              <p class="trainer-subject">Enterprise Java Architect</p>
+              <p class="trainer-bio">
+                Principal Backend Architect consulting for Fortune 500 banks. Expert in high-throughput Java systems, Spring Boot microservices, and design patterns.
+              </p>
+              <div class="trainer-tags">
+                <span>Java</span>
+                <span>Spring Boot</span>
+                <span>Microservices</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Trainer 4 -->
+          <div class="trainer-card">
+            <div class="trainer-image-container">
+              <img 
+                src="https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=600&q=80" 
+                alt="Sarah Jenkins - Chief Cybersecurity Consultant" 
+                class="trainer-img"
+                loading="lazy"
+              >
+              <div class="trainer-socials">
+                <a href="#trainers" aria-label="LinkedIn Profile"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="#trainers" aria-label="GitHub Profile"><i class="fa-brands fa-github"></i></a>
+                <a href="#trainers" aria-label="Twitter Profile"><i class="fa-brands fa-x-twitter"></i></a>
+              </div>
+            </div>
+            <div class="trainer-info">
+              <span class="trainer-experience-badge">9+ Years Experience</span>
+              <h3 class="trainer-name">Sarah Jenkins</h3>
+              <p class="trainer-subject">Cybersecurity Consultant</p>
+              <p class="trainer-bio">
+                Certified Ethical Hacker (CEH) & CISSP. Specialized in penetration testing, threat hunting, vulnerability management, and defensive security architectures.
+              </p>
+              <div class="trainer-tags">
+                <span>Ethical Hacking</span>
+                <span>Network Sec</span>
+                <span>OWASP</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         5. STUDENT REVIEWS SECTION
+         ========================================================= -->
+    <section class="section reviews-section" id="reviews">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="section-header text-center">
+          <span class="section-tag">Student Success</span>
+          <h2 class="section-title">What Our Learners Say</h2>
+          <p class="section-subtitle">
+            Discover how LearnHub has empowered students and career-switchers to land their dream tech roles.
+          </p>
+        </div>
+
+        <!-- Reviews Grid -->
+        <div class="reviews-grid">
+
+          <!-- Review 1 -->
+          <div class="review-card">
+            <div class="review-quote-icon">
+              <i class="fa-solid fa-quote-left"></i>
+            </div>
+            <div class="review-stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <p class="review-feedback">
+              "The Web Development course exceeded all my expectations. The step-by-step project guidance and mentor code reviews helped me transition from retail to a Junior Frontend Engineer position within four months!"
+            </p>
+            <div class="review-author">
+              <img 
+                src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=150&q=80" 
+                alt="Emily Watson" 
+                class="author-avatar"
+                loading="lazy"
+              >
+              <div class="author-details">
+                <h4 class="author-name">Emily Watson</h4>
+                <p class="author-role">Web Development Graduate</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Review 2 -->
+          <div class="review-card">
+            <div class="review-quote-icon">
+              <i class="fa-solid fa-quote-left"></i>
+            </div>
+            <div class="review-stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <p class="review-feedback">
+              "Priya Sharma is an incredible educator. She makes complex Python data structures and scripting easy to grasp. The automation projects I built here now save our university lab hours of manual entry every week."
+            </p>
+            <div class="review-author">
+              <img 
+                src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=150&q=80" 
+                alt="Rahul Verma" 
+                class="author-avatar"
+                loading="lazy"
+              >
+              <div class="author-details">
+                <h4 class="author-name">Rahul Verma</h4>
+                <p class="author-role">Python Programming Graduate</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Review 3 -->
+          <div class="review-card">
+            <div class="review-quote-icon">
+              <i class="fa-solid fa-quote-left"></i>
+            </div>
+            <div class="review-stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <p class="review-feedback">
+              "The hands-on labs in the Cybersecurity course were mind-blowing. Setting up virtual Kali machines, analyzing real packet captures, and dissecting web exploits gave me the exact confidence needed for the Security+ certification."
+            </p>
+            <div class="review-author">
+              <img 
+                src="https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?auto=format&fit=crop&w=150&q=80" 
+                alt="Marcus Johnson" 
+                class="author-avatar"
+                loading="lazy"
+              >
+              <div class="author-details">
+                <h4 class="author-name">Marcus Johnson</h4>
+                <p class="author-role">Cybersecurity Graduate</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Review 4 -->
+          <div class="review-card">
+            <div class="review-quote-icon">
+              <i class="fa-solid fa-quote-left"></i>
+            </div>
+            <div class="review-stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <p class="review-feedback">
+              "David's Java course is gold for computer science students! The deep dive into OOP, Collections, and building Spring Boot REST microservices helped me ace my campus technical interviews with flying colors."
+            </p>
+            <div class="review-author">
+              <img 
+                src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&w=150&q=80" 
+                alt="Sophia Martinez" 
+                class="author-avatar"
+                loading="lazy"
+              >
+              <div class="author-details">
+                <h4 class="author-name">Sophia Martinez</h4>
+                <p class="author-role">Java Programming Graduate</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         6. REGISTRATION SECTION (With JavaScript Form Validation)
+         ========================================================= -->
+    <section class="section register-section" id="register">
+      <div class="container">
+        <div class="register-wrapper">
+
+          <!-- Left Info Column -->
+          <div class="register-info">
+            <span class="section-tag">Take The First Step</span>
+            <h2 class="register-title">Start Your Learning Journey With Us</h2>
+            <p class="register-desc">
+              Register today to access full course materials, interactive lab environments, downloadable resources, and mentor support completely free.
+            </p>
+
+            <div class="register-perks">
+              <div class="perk-item">
+                <div class="perk-icon">
+                  <i class="fa-solid fa-circle-check"></i>
+                </div>
+                <div class="perk-text">
+                  <h4>Immediate Course Access</h4>
+                  <p>Begin learning instantly with our interactive syllabus.</p>
+                </div>
+              </div>
+
+              <div class="perk-item">
+                <div class="perk-icon">
+                  <i class="fa-solid fa-certificate"></i>
+                </div>
+                <div class="perk-text">
+                  <h4>Free Completion Certificate</h4>
+                  <p>Earn an accredited credential to showcase on LinkedIn.</p>
+                </div>
+              </div>
+
+              <div class="perk-item">
+                <div class="perk-icon">
+                  <i class="fa-solid fa-headset"></i>
+                </div>
+                <div class="perk-text">
+                  <h4>Dedicated Mentor Assistance</h4>
+                  <p>Get answers to your code questions whenever you get stuck.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Student Trust Quote -->
+            <div class="register-trust-badge">
+              <i class="fa-solid fa-shield-halved"></i>
+              <span>No credit card required. 100% Secure &amp; spam-free registration.</span>
+            </div>
+          </div>
+
+          <!-- Right Registration Form Card -->
+          <div class="register-card">
+            <div class="card-header-styled">
+              <h3 class="card-title">Student Registration</h3>
+              <p class="card-subtitle">Fill in your details below to create your free account.</p>
+            </div>
+
+            <!-- Registration Form with Client-Side Validation -->
+            <form id="registrationForm" class="registration-form" novalidate>
+              
+              <!-- Full Name Field -->
+              <div class="form-group" id="group-fullname">
+                <label for="fullName" class="form-label">
+                  <i class="fa-regular fa-user"></i> Full Name <span class="required">*</span>
+                </label>
+                <div class="input-container">
+                  <input 
+                    type="text" 
+                    id="fullName" 
+                    name="fullName" 
+                    class="form-control" 
+                    placeholder="e.g. John Doe"
+                    autocomplete="name"
+                  >
+                  <span class="input-status-icon"></span>
+                </div>
+                <small class="error-text" id="nameError"></small>
+              </div>
+
+              <!-- Email Address Field -->
+              <div class="form-group" id="group-email">
+                <label for="email" class="form-label">
+                  <i class="fa-regular fa-envelope"></i> Email Address <span class="required">*</span>
+                </label>
+                <div class="input-container">
+                  <input 
+                    type="email" 
+                    id="email" 
+                    name="email" 
+                    class="form-control" 
+                    placeholder="e.g. john@example.com"
+                    autocomplete="email"
+                  >
+                  <span class="input-status-icon"></span>
+                </div>
+                <small class="error-text" id="emailError"></small>
+              </div>
+
+              <!-- Phone Number Field -->
+              <div class="form-group" id="group-phone">
+                <label for="phone" class="form-label">
+                  <i class="fa-solid fa-phone"></i> Phone Number <span class="required">*</span>
+                </label>
+                <div class="input-container">
+                  <input 
+                    type="tel" 
+                    id="phone" 
+                    name="phone" 
+                    class="form-control" 
+                    placeholder="e.g. 9876543210 (10 digits)"
+                    autocomplete="tel"
+                    maxlength="15"
+                  >
+                  <span class="input-status-icon"></span>
+                </div>
+                <small class="error-text" id="phoneError"></small>
+              </div>
+
+              <!-- Select Course Dropdown Field -->
+              <div class="form-group" id="group-course">
+                <label for="courseSelect" class="form-label">
+                  <i class="fa-solid fa-book-open"></i> Select Course <span class="required">*</span>
+                </label>
+                <div class="input-container select-wrapper">
+                  <select id="courseSelect" name="courseSelect" class="form-control">
+                    <option value="" disabled selected>-- Choose your desired course --</option>
+                    <option value="Web Development">Web Development (Full Stack)</option>
+                    <option value="Python Programming">Python Programming</option>
+                    <option value="Java Programming">Java Programming</option>
+                    <option value="Cybersecurity">Cybersecurity & Ethical Hacking</option>
+                  </select>
+                  <i class="fa-solid fa-chevron-down select-caret"></i>
+                </div>
+                <small class="error-text" id="courseError"></small>
+              </div>
+
+              <!-- Password Field -->
+              <div class="form-group" id="group-password">
+                <label for="password" class="form-label">
+                  <i class="fa-solid fa-lock"></i> Password <span class="required">*</span>
+                </label>
+                <div class="input-container password-container">
+                  <input 
+                    type="password" 
+                    id="password" 
+                    name="password" 
+                    class="form-control" 
+                    placeholder="At least 6 characters"
+                    autocomplete="new-password"
+                  >
+                  <button type="button" class="password-toggle-btn" id="togglePasswordBtn" aria-label="Toggle password visibility">
+                    <i class="fa-regular fa-eye" id="togglePasswordIcon"></i>
+                  </button>
+                </div>
+                <small class="error-text" id="passwordError"></small>
+                <div class="password-strength-bar" id="passwordStrengthBar">
+                  <div class="strength-meter" id="strengthMeter"></div>
+                </div>
+              </div>
+
+              <!-- Submit Button -->
+              <button type="submit" class="btn btn-primary btn-block btn-submit" id="submitBtn">
+                <span class="btn-text">Complete Registration</span>
+                <i class="fa-solid fa-arrow-right btn-icon"></i>
+              </button>
+
+              <p class="form-disclaimer">
+                By registering, you agree to LearnHub's <a href="#contact">Terms of Service</a> &amp; <a href="#contact">Privacy Policy</a>.
+              </p>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         7. CONTACT & FOOTER SECTION
+         ========================================================= -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="section-header text-center">
+          <span class="section-tag">Get In Touch</span>
+          <h2 class="section-title">Contact &amp; Student Support</h2>
+          <p class="section-subtitle">
+            Have questions about admissions, course curriculum, or certifications? Reach out to our academic advisor team anytime.
+          </p>
+        </div>
+
+        <!-- Contact Cards Grid -->
+        <div class="contact-cards-grid">
+          
+          <!-- Card 1: Email -->
+          <div class="contact-card">
+            <div class="contact-card-icon">
+              <i class="fa-regular fa-envelope"></i>
+            </div>
+            <h4 class="contact-card-title">Email Us</h4>
+            <p class="contact-card-desc">Send us your queries and our team will respond within 24 hours.</p>
+            <a href="mailto:admissions@learnhub.edu" class="contact-link">admissions@learnhub.edu</a>
+          </div>
+
+          <!-- Card 2: Phone -->
+          <div class="contact-card">
+            <div class="contact-card-icon">
+              <i class="fa-solid fa-phone-volume"></i>
+            </div>
+            <h4 class="contact-card-title">Call Us</h4>
+            <p class="contact-card-desc">Speak directly with our academic mentors and counselors.</p>
+            <a href="tel:+18005550199" class="contact-link">+1 (800) 555-0199</a>
+          </div>
+
+          <!-- Card 3: Location -->
+          <div class="contact-card">
+            <div class="contact-card-icon">
+              <i class="fa-solid fa-location-dot"></i>
+            </div>
+            <h4 class="contact-card-title">Campus Location</h4>
+            <p class="contact-card-desc">Main Education Centre &amp; Virtual Learning Studio.</p>
+            <address class="contact-link-address">742 Innovation Way, Tech Park, CA 94025</address>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- =========================================================
+       MAIN FOOTER
+       ========================================================= -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <!-- Footer Col 1: Brand -->
+      <div class="footer-col footer-col-brand">
+        <a href="#home" class="logo footer-logo">
+          <div class="logo-icon">
+            <i class="fa-solid fa-graduation-cap"></i>
+          </div>
+          <span class="logo-text">Learn<span>Hub</span></span>
+        </a>
+        <p class="footer-about">
+          LearnHub is dedicated to democratizing high-quality technical education through practical, industry-focused curriculums, interactive challenges, and mentor support.
+        </p>
+        <div class="footer-socials">
+          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="social-btn">
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
+          <a href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="GitHub" class="social-btn">
+            <i class="fa-brands fa-github"></i>
+          </a>
+          <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter / X" class="social-btn">
+            <i class="fa-brands fa-x-twitter"></i>
+          </a>
+          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="social-btn">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" aria-label="YouTube" class="social-btn">
+            <i class="fa-brands fa-youtube"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Footer Col 2: Quick Links -->
+      <div class="footer-col">
+        <h4 class="footer-heading">Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="#home"><i class="fa-solid fa-chevron-right"></i> Home</a></li>
+          <li><a href="#courses"><i class="fa-solid fa-chevron-right"></i> All Courses</a></li>
+          <li><a href="#benefits"><i class="fa-solid fa-chevron-right"></i> Learning Benefits</a></li>
+          <li><a href="#trainers"><i class="fa-solid fa-chevron-right"></i> Expert Trainers</a></li>
+          <li><a href="#reviews"><i class="fa-solid fa-chevron-right"></i> Student Reviews</a></li>
+          <li><a href="#register"><i class="fa-solid fa-chevron-right"></i> Register Now</a></li>
+        </ul>
+      </div>
+
+      <!-- Footer Col 3: Programs -->
+      <div class="footer-col">
+        <h4 class="footer-heading">Featured Tracks</h4>
+        <ul class="footer-links">
+          <li><a href="#courses"><i class="fa-solid fa-chevron-right"></i> Full Stack Web Dev</a></li>
+          <li><a href="#courses"><i class="fa-solid fa-chevron-right"></i> Python Data &amp; Scripting</a></li>
+          <li><a href="#courses"><i class="fa-solid fa-chevron-right"></i> Java Enterprise Systems</a></li>
+          <li><a href="#courses"><i class="fa-solid fa-chevron-right"></i> Ethical Hacking &amp; Sec</a></li>
+          <li><a href="#benefits"><i class="fa-solid fa-chevron-right"></i> Industry Certificates</a></li>
+        </ul>
+      </div>
+
+      <!-- Footer Col 4: Newsletter -->
+      <div class="footer-col">
+        <h4 class="footer-heading">Stay Updated</h4>
+        <p class="footer-newsletter-desc">
+          Subscribe to our weekly student newsletter for free coding exercises and tech industry trends.
+        </p>
+        <form class="footer-newsletter-form" id="newsletterForm" onsubmit="event.preventDefault(); alert('Thank you for subscribing to LearnHub updates!'); this.reset();">
+          <input type="email" placeholder="Your email address" required class="newsletter-input">
+          <button type="submit" class="newsletter-btn" aria-label="Subscribe">
+            <i class="fa-solid fa-paper-plane"></i>
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Footer Copyright Bar -->
+    <div class="footer-bottom">
+      <div class="container footer-bottom-container">
+        <p class="copyright-text">
+          &copy; 2026 <strong>LearnHub</strong>. All rights reserved. Designed for students and aspiring developers worldwide.
+        </p>
+        <div class="footer-bottom-links">
+          <a href="#contact">Privacy Policy</a>
+          <span>&bull;</span>
+          <a href="#contact">Terms of Service</a>
+          <span>&bull;</span>
+          <a href="#contact">Cookie Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- =========================================================
+       MODAL 1: COURSE DETAILS MODAL (Interactive "Learn More")
+       ========================================================= -->
+  <div class="modal-backdrop" id="courseModal" aria-hidden="true" role="dialog" aria-labelledby="modalCourseTitle">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <div class="modal-header-info">
+          <span class="modal-badge" id="modalCourseDuration"><i class="fa-regular fa-clock"></i> 10 Weeks</span>
+          <h3 class="modal-title" id="modalCourseTitle">Course Details</h3>
+        </div>
+        <button class="modal-close-btn" id="closeCourseModalBtn" aria-label="Close modal">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+
+      <div class="modal-body">
+        <div class="modal-instructor-row">
+          <i class="fa-solid fa-chalkboard-user"></i>
+          <span>Lead Instructor: <strong id="modalCourseInstructor">Dr. Alex Morgan</strong></span>
+        </div>
+
+        <p class="modal-description" id="modalCourseDesc">
+          Detailed overview of the curriculum and core engineering foundations taught in this course.
+        </p>
+
+        <h4 class="modal-syllabus-title"><i class="fa-solid fa-list-check"></i> What You Will Master:</h4>
+        <ul class="modal-syllabus-list" id="modalCourseSyllabus">
+          <!-- Dynamically populated via JavaScript -->
+        </ul>
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" id="modalCancelBtn">Close</button>
+        <button type="button" class="btn btn-primary" id="modalEnrollBtn">
+          <span>Enroll In This Course</span>
+          <i class="fa-solid fa-arrow-right"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- =========================================================
+       MODAL 2: REGISTRATION SUCCESS MODAL
+       ========================================================= -->
+  <div class="modal-backdrop" id="successModal" aria-hidden="true" role="dialog" aria-labelledby="successTitle">
+    <div class="modal-dialog modal-dialog-success">
+      <div class="modal-body text-center">
+        <div class="success-icon-animation">
+          <i class="fa-solid fa-check"></i>
+        </div>
+        <h3 class="success-title" id="successTitle">Registration Successful!</h3>
+        <p class="success-message">
+          Welcome aboard, <strong id="successStudentName">Student</strong>! Your registration for <span class="highlight-pill" id="successCourseName">Web Development</span> has been confirmed.
+        </p>
+        <div class="success-details-box">
+          <p><i class="fa-regular fa-envelope"></i> A welcome email with your dashboard credentials has been dispatched to <strong id="successStudentEmail">your email</strong>.</p>
+          <p><i class="fa-solid fa-phone"></i> An SMS confirmation was sent to <strong id="successStudentPhone">your phone</strong>.</p>
+        </div>
+        <button type="button" class="btn btn-primary btn-block btn-lg" id="closeSuccessModalBtn">
+          <span>Go to Learning Portal</span>
+          <i class="fa-solid fa-arrow-right"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Back to Top Floating Button -->
+  <button class="back-to-top-btn" id="backToTopBtn" aria-label="Back to top">
+    <i class="fa-solid fa-chevron-up"></i>
+  </button>
+
+  <!-- Custom JavaScript File -->
+  <script src="script.js"></script>
+</body>
+</html>
